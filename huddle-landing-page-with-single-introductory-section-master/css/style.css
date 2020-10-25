@@ -1,0 +1,88 @@
+Body{
+    background: url("images\bg-desktop.svg");
+ font-size: 1.5rem;
+}
+header{
+  text-align: left;
+  margin-bottom: 40px;
+  padding-left: 5%;
+}
+/* class selector */
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.gutters{
+  margin-right: 15px;
+}
+.btn{
+  text-align: center;
+  padding: 3% 15%;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.down{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width: 1022px) and (min-width:600px){
+  .image{
+
+    width: 700px;
+    text-align: center;
+  }
+  .one{
+    text-align: center;
+    margin-left: 20px;
+  }
+  .two{
+    text-align: center;
+    margin-left: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .gutters{
+    margin-bottom: 10px;
+  }
+  .down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
+
+}
+@media screen and (max-width: 600px){
+  body{
+    background-image: url("images\bg-mobile.svg");
+  }
+  .image{
+
+    width: 400px;
+
+  }
+  .one{
+    text-align: center;
+    margin-left: 20px;
+  }
+  .two{
+    text-align: center;
+  margin-left: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .gutters{
+    margin-bottom: 10px;
+  }
+  .down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+}
